@@ -1,0 +1,81 @@
+/* Logo */
+.logo {
+  width: auto; /* equivalent to 100px */
+  height: 6.25rem; /* equivalent to 100px */
+}
+
+/* Navigation Menu */
+nav {
+  display: flex;
+  gap: 0.625rem; /* equivalent to 10px */
+}
+
+/* Search Bar */
+/*.search-bar {*/
+/*  !*flex-grow: 1;*!*/
+/*  text-align: right;*/
+/*}*/
+
+/* Hero Section */
+.hero {
+  text-align: center;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+}
+
+.catchy-headline {
+  font-size: 1.5rem; /* equivalent to 24px */
+  margin-top: 1.25rem; /* equivalent to 20px */
+}
+
+/* Featured Categories */
+.category-title {
+  text-align: center;
+  margin-top: 1.875rem; /* equivalent to 30px */
+}
+
+.category-list {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem; /* equivalent to 20px */
+}
+
+.category-card {
+  width: 15.625rem; /* equivalent to 250px */
+  text-align: center;
+}
+
+.category-image {
+  width: 100%;
+  height: auto;
+}
+
+.category-name {
+  margin-top: 0.625rem; /* equivalent to 10px */
+}
+
+/*.search-bar {*/
+/*  display: flex;*/
+/*  justify-content: right;*/
+/*}*/
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.search-icon{
+  display: flex;
+  align-items: baseline;
+}
+
