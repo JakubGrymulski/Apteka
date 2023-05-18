@@ -1,0 +1,60 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <!-- Logo -->
+    <img src="assets/img/LOGO.png" alt="Drugstore Logo" class="logo" />
+
+    <!-- Navigation Menu -->
+    <nav>
+      <a mat-button routerLink="#">Pharmacy</a>
+      <a mat-button routerLink="#">Health & Wellness</a>
+      <a mat-button routerLink="#">Beauty</a>
+      <a mat-button routerLink="#">Prescriptions</a>
+      <a mat-button routerLink="#">Contact Us</a>
+      <a mat-button routerLink="#">Account</a>
+    </nav>
+
+    <!-- Search Bar -->
+    <mat-form-field  appearance="standard" class="search-bar">
+<!--      <mat-icon [inline]="true" matPrefix class="search-icon">search</mat-icon>-->
+      <input matInput type="text" placeholder="Search for products or medications" />
+    </mat-form-field>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<main class="main-content">
+   Hero Section
+  <section class="hero">
+    <img src="path/to/banner.jpg" alt="Hero Banner" class="banner-image" />
+    <h1 class="catchy-headline">Your Trusted Online Pharmacy for Quality Medications and Wellness Products</h1>
+  </section>
+
+
+
+  <!-- Featured Categories -->
+  <section class="categories">
+    <h2 class="category-title">Featured Categories</h2>
+    <div class="category-list">
+      <!-- Category 1 -->
+      <mat-card class="category-card">
+        <img src="path/to/category1.jpg" alt="Category 1" class="category-image" />
+        <h3 class="category-name">Category 1 Name</h3>
+      </mat-card>
+
+      <!-- Category 2 -->
+      <mat-card class="category-card">
+        <img src="path/to/category2.jpg" alt="Category 2" class="category-image" />
+        <h3 class="category-name">Category 2 Name</h3>
+      </mat-card>
+    </div>
+  </section>
+</main>
+<div>
+
+  <div class="row">
+    <div class="con-12">
+      <app-carousel></app-carousel>
+    </div>
+  </div>
+
+
+</div>
