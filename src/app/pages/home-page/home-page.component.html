@@ -4,7 +4,7 @@
     <img src="assets/img/LOGO.png" alt="Drugstore Logo" class="logo" />
 
     <!-- Navigation Menu -->
-    <nav>
+    <nav class="nav-menu">
       <a mat-button routerLink="#">Pharmacy</a>
       <a mat-button routerLink="#">Health & Wellness</a>
       <a mat-button routerLink="#">Beauty</a>
@@ -14,21 +14,27 @@
     </nav>
 
     <!-- Search Bar -->
-    <mat-form-field  appearance="standard" class="search-bar">
-<!--      <mat-icon [inline]="true" matPrefix class="search-icon">search</mat-icon>-->
-      <input matInput type="text" placeholder="Search for products or medications" />
-    </mat-form-field>
+    <div class="search-bar" flex="auto" hide-sm hide-xs>
+      <mat-form-field style="width: 90%" appearance="standard">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input style="margin-left: 1rem" matInput type="text" placeholder="Search" />
+      </mat-form-field>
+    </div>
+
+    <!-- Basket Icon -->
+    <div class="basket-icon" flex="none" hide-sm hide-xs>
+      <i class="fas fa-shopping-basket"></i>
+      <span class="basket-text">Basket</span>
+    </div>
   </mat-toolbar-row>
 </mat-toolbar>
 
 <main class="main-content">
-   Hero Section
+  <!-- Hero Section -->
   <section class="hero">
     <img src="path/to/banner.jpg" alt="Hero Banner" class="banner-image" />
     <h1 class="catchy-headline">Your Trusted Online Pharmacy for Quality Medications and Wellness Products</h1>
   </section>
-
-
 
   <!-- Featured Categories -->
   <section class="categories">
@@ -48,13 +54,11 @@
     </div>
   </section>
 </main>
-<div>
 
+<div>
   <div class="row">
-    <div class="con-12">
+    <div class="col-12">
       <app-carousel></app-carousel>
     </div>
   </div>
-
-
 </div>
