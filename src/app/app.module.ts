@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -12,6 +12,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {CommonModule} from '@angular/common';
+import {CarouselComponent} from './components/carousel/carousel.component';
+import {NgbCarouselModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -19,6 +21,7 @@ import {CommonModule} from '@angular/common';
   declarations: [
     AppComponent,
     HomePageComponent,
+    CarouselComponent,
   ],
   imports: [
     CommonModule,
@@ -29,9 +32,13 @@ import {CommonModule} from '@angular/common';
     MatButtonModule,
     MatCardModule,
     MatIconModule,
+    NgbCarouselModule,
+    NgbModule,
+
     // CarouselComponent
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
